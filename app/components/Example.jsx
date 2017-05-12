@@ -13,7 +13,8 @@ import React from 'react';
 var Example = () => {
   return (
     <div>
-      <h3>Example page</h3>
+      <h3>Examples</h3>
+      <p>welcome to example page</p>
     </div>
   );
 };
