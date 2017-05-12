@@ -10,6 +10,12 @@ import React from 'react';
 //   }
 // }
 
-var Example = () => <div><h3>Example page</h3></div>;
+var Example = () => {
+  return (
+    <div>
+      <h3>Example page</h3>
+    </div>
+  );
+};
 
 export default Example;
