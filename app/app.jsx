@@ -6,6 +6,10 @@ import Weather from 'Weather';
 import About from 'About';
 import Example from 'Example';
 
+//  Load foundation
+require('style-loader!css-loader!foundation-sites/dist/css/foundation.min.css');
+$(document).foundation();
+
 ReactDOM.render(
   <HashRouter>
     <Main>
