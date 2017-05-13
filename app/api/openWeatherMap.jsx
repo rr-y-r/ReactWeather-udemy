@@ -9,13 +9,16 @@ export default {
     var requestUrl = `${OPEN_WEATHER_MAP_URL}&q=${encodedLocation}&units=metric`;
 
     return axios.get(requestUrl).then((res)=>{
+
+      // debugger;
       if(res.data.cod && res.data.message){
         throw new Error(res.data.message);
       }else{
         return res.data.main.temp;
       }
     },(res)=>{
-      throw new Error(res.data.message);
+      // console.log(res.response.data.message);
+      throw new Error(res.response.data.message);
     });
   }
 }
